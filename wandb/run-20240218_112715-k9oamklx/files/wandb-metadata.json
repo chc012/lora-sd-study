@@ -1,0 +1,69 @@
+{
+    "os": "Windows-11-10.0.22621-SP0",
+    "python": "3.12.1",
+    "heartbeatAt": "2024-02-18T19:27:18.443944",
+    "startedAt": "2024-02-18T19:27:15.704101",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--pretrained_model_name_or_path=CompVis/stable-diffusion-v1-4",
+        "--dataset_name=lambdalabs/pokemon-blip-captions",
+        "--caption_column=text",
+        "--resolution=512",
+        "--random_flip",
+        "--train_batch_size=1",
+        "--num_train_epochs=100",
+        "--checkpointing_steps=5000",
+        "--learning_rate=1e-04",
+        "--lr_scheduler=constant",
+        "--lr_warmup_steps=0",
+        "--seed=42",
+        "--output_dir=sd-pokemon-model-lora",
+        "--validation_prompt=cute dragon creature",
+        "--report_to=wandb"
+    ],
+    "state": "running",
+    "program": "E:\\Documents\\GitHub\\lora-sd-study\\train_text_to_image_lora.py",
+    "codePathLocal": "train_text_to_image_lora.py",
+    "codePath": "train_text_to_image_lora.py",
+    "git": {
+        "remote": "https://github.com/chc012/lora-sd-study.git",
+        "commit": "070f32562b4ef5cf7a9cd7b4c9f58a26a81790c2"
+    },
+    "email": "chc012@stanford.edu",
+    "root": "E:/Documents/GitHub/lora-sd-study",
+    "host": "TONYS-AW-M15",
+    "username": "tonyc",
+    "executable": "D:\\Miniconda3\\envs\\lora\\python.exe",
+    "cpu_count": 6,
+    "cpu_count_logical": 12,
+    "cpu_freq": {
+        "current": 2208.0,
+        "min": 0.0,
+        "max": 2208.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2208.0,
+            "min": 0.0,
+            "max": 2208.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 931.3857383728027,
+            "used": 244.58043670654297
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 2060",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 2060",
+            "memory_total": 6442450944
+        }
+    ],
+    "memory": {
+        "total": 31.79827880859375
+    }
+}
